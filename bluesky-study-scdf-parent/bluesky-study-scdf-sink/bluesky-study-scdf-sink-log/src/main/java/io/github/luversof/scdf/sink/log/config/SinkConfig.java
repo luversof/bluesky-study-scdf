@@ -13,6 +13,6 @@ public class SinkConfig {
 
 	@Bean
 	Consumer<String> message() {
-		return message -> log.debug("message : {}", message);
+		return message -> log.info("message : {}", message);
 	}
 }

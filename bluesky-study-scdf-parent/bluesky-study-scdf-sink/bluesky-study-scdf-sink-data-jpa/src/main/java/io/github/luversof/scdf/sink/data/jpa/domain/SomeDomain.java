@@ -1,5 +1,9 @@
 package io.github.luversof.scdf.sink.data.jpa.domain;
 
+import java.util.List;
+
+import io.github.luversof.scdf.sink.data.jpa.convert.StringListConverter;
+import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,4 +21,7 @@ public class SomeDomain {
 	private long idx;
 	
 	private String someValue;
+	
+	@Convert(converter = StringListConverter.class)
+	private List<String> valueList;
 }

@@ -89,6 +89,8 @@
 						</execution>
 					</executions>
 					<configuration>
+						<allowInsecureRegistries>true</allowInsecureRegistries>
+						
 						<container>
 							<creationTime>USE_CURRENT_TIMESTAMP</creationTime>
 						</container>
